@@ -1,0 +1,17 @@
+require 'tailor/rake_task'
+require 'foodcritic'
+
+task :lint => [:build_number, :tailor, :foodcritic]
+task :default => [:lint]
+
+task :build_number do
+  IO.write('version.txt', (ENV['BUILD_NUMBER'] ? "0.1.#{ENV['BUILD_NUMBER']}" : '0.1.0'))
+end
+
+FoodCritic::Rake::LintTask.new do |t|
+  t.options = {
+      :cookbook_paths => '.',
+      :search_gems => true }
+end
+
+Tailor::RakeTask.new
