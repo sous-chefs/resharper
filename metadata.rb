@@ -4,6 +4,7 @@ maintainer_email ''
 license          'All rights reserved'
 description      'Installs/Configures resharper'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          (ENV['BUILD_NUMBER'] ? "0.1.#{ENV['BUILD_NUMBER']}" : '0.1.0')
+ver_path = File.join(File.dirname(__FILE__), 'version.txt')
+version ((IO.read(ver_path) if File.exists?(ver_path)) || '0.0.1').chomp
 supports         'windows'
 depends          'windows', '>= 1.2.6'
