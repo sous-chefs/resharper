@@ -12,3 +12,12 @@ version.txt
 bin/*
 .bundle/*
 
+.kitchen/
+.kitchen.local.yml
+
+Berksfile.lock
+
+/cache/
+
+#IDE
+.idea/
