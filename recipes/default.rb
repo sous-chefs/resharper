@@ -24,7 +24,7 @@ else
   remote_file local_setup do
     source "#{node['resharper']['root_download_url']}/JetBrains.ReSharperUltimate.#{version}.exe"
     checksum checksum
-    action :create_if_missing
+    notifies :execute, "run[install_resharper_#{version}]", :immediately
   end
 
   log_file = win_friendly_path(::File.join(Dir.tmpdir, "resharper#{version}.log"))
@@ -34,5 +34,6 @@ else
 
   execute "install_resharper_#{version}" do
     command "#{local_setup} #{opts}"
+    action :nothing
   end
 end
