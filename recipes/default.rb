@@ -21,10 +21,11 @@ if version.start_with?('7')
 else
   local_setup = ::File.join(Chef::Config[:file_cache_path], "resharper#{version}.exe")
 
-  remote_file local_setup do
-    source "#{node['resharper']['root_download_url']}/JetBrains.ReSharperUltimate.#{version}.exe"
+  remote_file "download_resharper_#{version}" do
+    path local_setup
     checksum checksum
-    notifies :execute, "run[install_resharper_#{version}]", :immediately
+    source "#{node['resharper']['root_download_url']}/JetBrains.ReSharperUltimate.#{version}.exe"
+    notifies :run, "execute[install_resharper_#{version}]", :immediately
   end
 
   log_file = win_friendly_path(::File.join(Dir.tmpdir, "resharper#{version}.log"))
