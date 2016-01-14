@@ -29,5 +29,6 @@ suites:
       - recipe[resharper]
     attributes:
       visualstudio:
+        version: '2015'
         edition: 'professional'
         source: 'http://vagrantboxes.hq.daptiv.com/installs/cookbookresources'
