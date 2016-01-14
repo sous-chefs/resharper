@@ -8,7 +8,9 @@ describe 'resharper::default' do
     end
     it 'download finished notifies install executable' do
       resource = chef_run.remote_file('download_resharper_10')
-      expect(resource).to notify('execute[install_resharper_10]').to(:run).immediately
+      expect(resource).to notify(
+        'execute[install_resharper_10]'
+      ).to(:run).immediately
     end
   end
 end
