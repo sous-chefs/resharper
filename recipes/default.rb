@@ -7,8 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe 'visualstudio'
-
 version = node['resharper']['version']
 package_name = node['resharper'][version]['package_name']
 checksum = node['resharper'][version]['checksum']
