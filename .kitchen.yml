@@ -5,9 +5,6 @@ driver:
 
 provisioner:
   name: chef_zero
-  environments_path: test/environments
-  client_rb:
-    environment: cookbook_ci
 
 platforms:
   - name: windows2012r2_chef12
