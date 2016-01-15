@@ -1,0 +1,32 @@
+---
+driver:
+  name: vagrant
+  provider: virtualbox
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: windows2012r2_chef12
+    driver:
+      box_url: <%= ENV['WINDOWS_BOX_URL'] %>
+      customize:
+        memory: 4096
+        cpus: 2
+    driver_config:
+      communicator: winrm
+    transport:
+      name: winrm
+
+suites:
+  - name: default
+    run_list:
+      - recipe[visualstudio]
+      - recipe[resharper]
+    attributes:
+      resharper:
+        version: '10'
+      visualstudio:
+        version: '2015'
+        edition: 'professional'
+        source: <%= ENV['VISUALSTUDIO_SOURCE'] %>

@@ -1,3 +1,6 @@
+[![Cookbook Version](http://img.shields.io/cookbook/v/resharper.svg)](https://supermarket.chef.io/cookbooks/resharper)
+[![Build Status](https://secure.travis-ci.org/daptiv/resharper.png)](http://travis-ci.org/daptiv/resharper)
+
 # resharper cookbook
 
 Used for installing JetBrains ReSharper 7.
