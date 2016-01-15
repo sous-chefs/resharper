@@ -2,8 +2,6 @@ require 'rubocop/rake_task'
 require 'foodcritic'
 require 'rspec/core/rake_task'
 
-@provider = (ENV['PROVIDER'] || :virtualbox).to_sym
-
 task default: [:version, :rubocop, :foodcritic, :spec]
 
 task :version do
