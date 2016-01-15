@@ -1,6 +1,6 @@
 name 'resharper'
-maintainer 'Daptiv Solutions LLC'
-maintainer_email ''
+maintainer 'Changepoint'
+maintainer_email 'dl_teamengineering@daptiv.com'
 license 'All rights reserved'
 description 'Installs/Configures resharper'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
