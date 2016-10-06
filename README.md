@@ -1,5 +1,5 @@
 [![Cookbook Version](http://img.shields.io/cookbook/v/resharper.svg)](https://supermarket.chef.io/cookbooks/resharper)
-[![Build Status](https://secure.travis-ci.org/daptiv/resharper.png)](http://travis-ci.org/daptiv/resharper)
+[![Build Status](https://secure.travis-ci.org/windowschefcookbooks/resharper.png)](http://travis-ci.org/windowschefcookbooks/resharper)
 
 # resharper cookbook
 
