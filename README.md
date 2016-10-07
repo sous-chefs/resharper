@@ -1,5 +1,5 @@
 [![Cookbook Version](http://img.shields.io/cookbook/v/resharper.svg)](https://supermarket.chef.io/cookbooks/resharper)
-[![Build status](https://ci.appveyor.com/api/projects/status/ttumjhmmxjo5j7gv/branch/master?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks65871/resharper/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/j2fei3q90p9dft9q/branch/master?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks65871/resharper/branch/master)
 
 # resharper cookbook
 
