@@ -22,8 +22,7 @@
 default['resharper']['version'] = '2016.2.2'
 default['resharper']['source'] = 'https://download.jetbrains.com/resharper/'
 default['resharper']['vs_versions'] = %w(10 11 12 14)
-default['resharper']['products'] = 'dotPeek;teamCityAddin;ReSharper'
+default['resharper']['products'] = 'dotPeek;ReSharper'
 default['resharper']['checksum'] = 'eccad508fb83428f8c5a3a9a4fc9d930251f101f4929845fc4aea3ab004169dd'
-default['resharper']['package_name'] = 'JetBrains ReSharper Ultimate 2016'
 default['resharper']['install_dir'] =
   ::File.join(ENV['ProgramFiles(x86)'] || 'C:\Program Files (x86)', 'JetBrains')
