@@ -1,10 +1,25 @@
 require 'chefspec'
 require 'chefspec/berkshelf'
 
+# Conventionally, all specs live under a `spec` directory
+# which RSpec adds to the `$LOAD_PATH`. Require this file
+# using `require "spec_helper"` to ensure that it is only
+# loaded once.
+#
+# See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
+
+  # Run specs in random order to surface order dependencies. If you find an
+  # order dependency and want to debug it, you can fix the order by providing
+  # the seed, which is printed after each run.
+  #     --seed 1234
   config.order = 'random'
-  config.platform = 'windows'
-  config.version = '2012R2'
+
+  config.before(:each) do
+    ENV['ProgramFiles(x86)'] = 'C:\Program Files (x86)'
+    ENV['WINDIR'] = 'C:\Windows'
+    stub_const('File::ALT_SEPARATOR', '\\')
+  end
 end

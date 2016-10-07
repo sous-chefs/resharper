@@ -1,17 +1,29 @@
+#
+# Author:: Shawn Neal (<sneal@sneal.net>)
+# Cookbook Name:: resharper
+# Attribute:: default
+#
+# Copyright 2013, Daptiv Solutions, LLC.
+# Copyright 2016, Shawn Neal
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
-default['resharper']['version'] = '7.1.3000.2254'
-default['resharper']['root_download_url'] =
-  'http://download.jetbrains.com/resharper'
-default['resharper']['vs_versions'] = %w( 10 11 12 14 )
+default['resharper']['version'] = '2016.2.2'
+default['resharper']['source'] = 'https://download.jetbrains.com/resharper/'
+default['resharper']['vs_versions'] = %w(10 11 12 14)
 default['resharper']['products'] = 'dotPeek;teamCityAddin;ReSharper'
+default['resharper']['checksum'] = 'eccad508fb83428f8c5a3a9a4fc9d930251f101f4929845fc4aea3ab004169dd'
+default['resharper']['package_name'] = 'JetBrains ReSharper Ultimate 2016'
 default['resharper']['install_dir'] =
   ::File.join(ENV['ProgramFiles(x86)'] || 'C:\Program Files (x86)', 'JetBrains')
-
-default['resharper']['7.1.3000.2254']['checksum'] =
-  '45e257e196f9d9953c58d866c74942df4958a5d83f32b3e56348f253aca21768'
-default['resharper']['7.1.3000.2254']['package_name'] =
-  'JetBrains ReSharper 7.1.3'
-
-default['resharper']['10']['checksum'] =
-  'ff33ad115d98f1a464c5340605f3bcd432168b99b6757720aca5c41856374c49'
-default['resharper']['10']['package_name'] = 'JetBrains ReSharper 10'

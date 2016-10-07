@@ -1,28 +1,28 @@
 [![Cookbook Version](http://img.shields.io/cookbook/v/resharper.svg)](https://supermarket.chef.io/cookbooks/resharper)
-[![Build Status](https://secure.travis-ci.org/windowschefcookbooks/resharper.png)](http://travis-ci.org/windowschefcookbooks/resharper)
+[![Build status](https://ci.appveyor.com/api/projects/status/ttumjhmmxjo5j7gv/branch/master?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks65871/resharper/branch/master)
 
 # resharper cookbook
 
-Used for installing JetBrains ReSharper 7.
+Installs and configures JetBrains ReSharper 10+.
 
 # Requirements
 
-Visual Studio is already installed
+Visual Studio is already installed.
 
 # Usage
 
-Include the default recipe in your run list.
+Include the `resharper::default` recipe in your run list.
 
 # Attributes
 
-* `node['resharper']['version']` - Defaults ReSharper 7.1.3. If you change this you'll need to change product name and checksum.
+* `node['resharper']['version']` - Defaults ReSharper 10. If you change this you'll need to change product name and checksum.
 
 # Recipes
 
 default
 -------
-Installs ReSharper 7.1.3.
+Installs ReSharper 10
 
 # Author
 
-Author:: Shawn Neal (<sneal@daptiv.com>)
+Author:: Shawn Neal (<sneal@sneal.net>)
