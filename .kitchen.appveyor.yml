@@ -1,0 +1,31 @@
+---
+driver:
+  name: proxy
+  host: localhost
+  reset_command: "exit 0"
+  port: 5985
+  username: <%= ENV["winrm_user"] %>
+  password: <%= ENV["winrm_pass"] %>
+  elevated: true
+  elevated_username: <%= ENV["winrm_user"] %>
+  elevated_password: <%= ENV["winrm_pass"] %>
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: windows-2012R2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[visualstudio]
+      - recipe[resharper]
+      - recipe[minitest-handler]
+
+# AppVeyor image already has VS 2015 installed
+suites:
+  - name: default
+    run_list:
+      - recipe[resharper]
+      - recipe[minitest-handler]

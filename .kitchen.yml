@@ -2,31 +2,29 @@
 driver:
   name: vagrant
   provider: virtualbox
+  gui: true
+  username: vagrant
+  password: vagrant
+  elevated: true
+  elevated_username: vagrant
+  elevated_password: vagrant
 
 provisioner:
   name: chef_zero
 
 platforms:
-  - name: windows2012r2_chef12
+  - name: windows-2012R2
     driver:
-      box_url: <%= ENV['WINDOWS_BOX_URL'] %>
-      customize:
-        memory: 4096
-        cpus: 2
-    driver_config:
-      communicator: winrm
-    transport:
-      name: winrm
+      box: mwrock/Windows2012R2
 
 suites:
   - name: default
     run_list:
       - recipe[visualstudio]
       - recipe[resharper]
-    attributes:
-      resharper:
-        version: '10'
-      visualstudio:
-        version: '2015'
-        edition: 'professional'
-        source: <%= ENV['VISUALSTUDIO_SOURCE'] %>
+      - recipe[minitest-handler]
+    attributes: {
+      'visualstudio': {
+        'preserve_extracted_files': true
+      }
+    }
