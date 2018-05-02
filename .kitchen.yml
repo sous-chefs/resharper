@@ -20,11 +20,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[visualstudio]
       - recipe[resharper]
       - recipe[minitest-handler]
-    attributes: {
-      'visualstudio': {
-        'preserve_extracted_files': true
-      }
-    }
