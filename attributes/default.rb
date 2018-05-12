@@ -19,10 +19,10 @@
 # limitations under the License.
 #
 
-default['resharper']['version'] = '2016.2.2'
+default['resharper']['version'] = '2018.1'
 default['resharper']['source'] = 'https://download.jetbrains.com/resharper/'
 default['resharper']['vs_versions'] = %w(10 11 12 14)
 default['resharper']['products'] = 'dotPeek;ReSharper'
-default['resharper']['checksum'] = 'eccad508fb83428f8c5a3a9a4fc9d930251f101f4929845fc4aea3ab004169dd'
+default['resharper']['checksum'] = 'b81d315e36f7ab68c9ec70b6762f059973bebbcfd98d612f23ee9dc2b9d45b46'
 default['resharper']['install_dir'] =
   ::File.join(ENV['ProgramFiles(x86)'] || 'C:\Program Files (x86)', 'JetBrains')
