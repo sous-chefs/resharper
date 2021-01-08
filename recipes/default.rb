@@ -1,9 +1,9 @@
 #
-# Cookbook Name:: resharper
+# Cookbook:: resharper
 # Recipe:: default
 #
-# Copyright (C) 2013 Daptiv Solutions LLC
-# Copyright (C) 2016 Shawn Neal
+# Copyright:: (C) 2013 Daptiv Solutions LLC
+# Copyright:: (C) 2016 Shawn Neal
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

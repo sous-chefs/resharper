@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of resharper.
 
+## Unreleased
+
+- Various Cookstyle fixes
+
 ## 3.0.0
 
 * Support Chef 13, drop support for Chef 12.
