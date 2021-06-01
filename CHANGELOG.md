@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of resharper.
 
+## Unreleased
+
 ## 3.0.1 - *2021-06-01*
 
 - Various Cookstyle fixes
