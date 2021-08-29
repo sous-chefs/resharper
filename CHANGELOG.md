@@ -4,6 +4,8 @@ This file is used to list changes made in each version of resharper.
 
 ## Unreleased
 
+- Standardise files with files in sous-chefs/repo-management
+
 ## 3.0.1 - *2021-06-01*
 
 - Various Cookstyle fixes
