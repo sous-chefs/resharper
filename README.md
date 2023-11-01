@@ -29,6 +29,7 @@ See [this JetBrains article](https://resharper-support.jetbrains.com/hc/en-us/ar
 
 default
 -------
+
 Installs ReSharper
 
 # Author
