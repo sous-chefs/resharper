@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of resharper.
 
+## Unreleased
+
 ## 3.0.4 - *2024-05-06*
 
 ## 3.0.3 - *2022-02-08*
