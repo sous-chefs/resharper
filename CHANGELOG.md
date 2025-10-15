@@ -2,38 +2,33 @@
 
 This file is used to list changes made in each version of resharper.
 
-## Unreleased
-
-## 3.0.5 - *2025-09-04*
-
-## 3.0.4 - *2024-05-06*
-
 ## 3.0.3 - *2022-02-08*
 
-- Remove delivery folder
+* Remove delivery folder
 
 ## 3.0.2 - *2021-08-29*
 
-- Standardise files with files in sous-chefs/repo-management
+* Standardise files with files in sous-chefs/repo-management
 
 ## 3.0.1 - *2021-06-01*
 
-- Various Cookstyle fixes
+* Various Cookstyle fixes
 
 ## 3.0.0
 
-- Support Chef 13, drop support for Chef 12.
-- Upgrade to ReSharper 2018.1.
-- Standardize testing environment across repos.  (AppVeyor, Kitchen, Rake, etc.)
-- Upgrade development dependencies.
+* Support Chef 13, drop support for Chef 12.
+* Upgrade to ReSharper 2018.1.
+* Standardize testing environment across repos.  (AppVeyor, Kitchen, Rake, etc.)
+* Upgrade development dependencies.
 
 ## 2.0
 
-- Added support for installing ReSharper 2016+, which uses a non-MSI installer.
+* Added support for installing ReSharper 2016+, which uses a non-MSI installer.
 
 ## 1.0
 
-- Supports installing ReSharper 7.x
+* Supports installing ReSharper 7.x
 
-- - -
+* * *
+
 Refer to the [Markdown Syntax Guide](https://daringfireball.net/projects/markdown/syntax) for help with standard Markdown, and [Writing on GitHub](https://help.github.com/categories/writing-on-github/) for help with the GitHub dialect of Markdown.
