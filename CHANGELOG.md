@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of resharper.
 
+## [3.0.6](https://github.com/sous-chefs/resharper/compare/3.0.5...v3.0.6) (2025-10-16)
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#30](https://github.com/sous-chefs/resharper/issues/30)) ([80591b9](https://github.com/sous-chefs/resharper/commit/80591b948aa895107a60b35fb86635076b815c3b))
+
 ## 3.0.3 - *2022-02-08*
 
 * Remove delivery folder
