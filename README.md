@@ -27,8 +27,7 @@ See [this JetBrains article](https://resharper-support.jetbrains.com/hc/en-us/ar
 
 # Recipes
 
-default
--------
+## default
 
 Installs ReSharper
 
