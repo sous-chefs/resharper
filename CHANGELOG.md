@@ -2,6 +2,22 @@
 
 This file is used to list changes made in each version of resharper.
 
+## [3.1.0](https://github.com/sous-chefs/resharper/compare/v3.0.6...v3.1.0) (2026-11-10)
+
+
+### Features
+
+* normalize scaffolding across all windowschefcookbooks repos ([05487db](https://github.com/sous-chefs/resharper/commit/05487db7e61a8da455d2aa163ed279cb86354227))
+* update resharper, bump major version, etc. ([97c2c2d](https://github.com/sous-chefs/resharper/commit/97c2c2d8b94109299f89cfb36fae3cac0bf25e3c))
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#30](https://github.com/sous-chefs/resharper/issues/30)) ([80591b9](https://github.com/sous-chefs/resharper/commit/80591b948aa895107a60b35fb86635076b815c3b))
+* output encoding 'handle is invalid' error in build script ([52a0f2c](https://github.com/sous-chefs/resharper/commit/52a0f2c0d5e27fc407230541f57a60c889480e36))
+* output encoding 'handle is invalid' error in build script ([fb7f9ba](https://github.com/sous-chefs/resharper/commit/fb7f9ba19ee98cac6a25900f91a619bbf87fe4c3))
+* use fork of 'minitest-handler' compatible with chef 13 ([a64f238](https://github.com/sous-chefs/resharper/commit/a64f2385ac7af7ab7233181a3218e0dbe5700221))
+
 ## [3.0.6](https://github.com/sous-chefs/resharper/compare/3.0.5...v3.0.6) (2025-10-16)
 
 

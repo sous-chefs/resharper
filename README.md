@@ -1,21 +1,21 @@
+# ReSharper Cookbook
+
 [![Cookbook Version](http://img.shields.io/cookbook/v/resharper.svg)](https://supermarket.chef.io/cookbooks/resharper)
 [![Build status](https://ci.appveyor.com/api/projects/status/j2fei3q90p9dft9q/branch/master?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks65871/resharper/branch/master)
 
-# ReSharper Cookbook
-
 Installs and configures JetBrains ReSharper Ultimate.
 
-# Requirements
+## Requirements
 
 Visual Studio is already installed.
 
-# Usage
+## Usage
 
 Include the `resharper::default` recipe in your run list.
 
-# Attributes
+## Attributes
 
-## Optional
+### Optional
 
 * `node['resharper']['version']` - Defaults to ReSharper `2018.1`. If you change this you'll need to change the installer checksum.
 * `node['resharper']['checksum']` - The setup executable SHA256 checksum.
@@ -25,13 +25,12 @@ Include the `resharper::default` recipe in your run list.
 
 See [this JetBrains article](https://resharper-support.jetbrains.com/hc/en-us/articles/207241485-How-can-I-perform-a-silent-install-of-ReSharper-) for all `vs_versions` and `products` options.
 
-# Recipes
+## Recipes
 
-default
--------
+### default
 
 Installs ReSharper
 
-# Author
+## Author
 
 Author:: Shawn Neal (<sneal@sneal.net>)
